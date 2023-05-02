@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+  display: flex;
+  justify-content: center;
+  background-color:" ";
+ 
+  align-items:center;
+}
+
+.flex-container > div {
+  background-color: #fffefe;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+}
+</style>
+<body>
+    <div class="flex-container">
+  
+  <input type="text" id="Changecolour">
+    <input type="submit" onclick="changeColor()">
+   
+</div>
+    
+
+    <script>
+        function changeColor(){
+            let color=document.getElementById('Changecolour').value;
+            document.body.style.backgroundColor=color;
+        }
+
+    </script>
+
+</body>
+</html>
